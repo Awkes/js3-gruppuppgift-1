@@ -17,3 +17,16 @@ body {
 
 /* Koda nedanför */
 
+.splashLeft {
+  transform: translateX(-200px);
+  transition: all 1.2s ease-out;
+}
+.splashRight {
+  transform: translateX(200px);
+  transition: all 1.2s ease-out;
+}
+
+.splashVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
