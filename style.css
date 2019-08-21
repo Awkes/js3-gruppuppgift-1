@@ -17,3 +17,40 @@ body {
 
 /* Koda nedanför */
 
+/* Kontakt */
+#contact { 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10em 0 2em;
+  height: 95vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  transform: translateX(50vw);
+}
+.contact-form input,.contact-form textarea {
+  margin-bottom: 0.75em;
+  border: 1px solid #ccc;
+}
+.contact-form input { height: 2em; }
+.contact-form textarea { height: 6em; resize: none; }
+.contact-form button { 
+  background-color: #f00; 
+  color: #fff; 
+  border: 0; 
+  padding: 0.75em;
+}
+.contact-img img { max-width: 100%; max-height: 90vh; }
+.contact-img {
+  width: 70%;
+  transition: ease-in-out 750ms;
+  transform: translate(-15vw,10vh);
+}
+.contact-img-active {
+  transform: translateX(0);
+}
