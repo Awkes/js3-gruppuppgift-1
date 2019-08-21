@@ -1,0 +1,19 @@
+/* Rör ej */
+* { box-sizing: border-box; }
+body {
+  min-height: 100%;
+  margin: 0;
+  background-color: #f00;
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+}
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section:nth-child(even) { background-color: #000; }
+
+/* Koda nedanför */
+
