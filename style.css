@@ -100,7 +100,7 @@ h1.ml2 {
   .coca-cola-burk {
     display: none;
   }
-  .cocacola-logga{
+  .cocacola-logga {
     display: none;
   
   }
@@ -135,6 +135,7 @@ h1.ml2 {
   width: 20%;
   height: auto;
   opacity: 0;
+
 }
 .coca-cola-text {
   margin-top: 30%;
@@ -146,12 +147,14 @@ h1.ml2 {
   opacity: 0;
   width: 20%;
   height: auto;
+
 }
 
 /*Glitterburk*/
 
-/*
-
+.realtive{
+  position: relative;
+}
 
 .coca-cola-glitter-hide {
   display: none;
@@ -159,12 +162,26 @@ h1.ml2 {
 
 .coca-cola-glitter {
   display: block;
-  width: 5%;
+  width: 6%;
   height: auto;
   position: absolute;
+  top: 20%;
+  left: 27%;
+
 
 }
-*/
+
+
+
+
+
+
+
+
+
+
+
+
 /* Coca Cola Zero */
 #cc-zero {
   width: 100%;
