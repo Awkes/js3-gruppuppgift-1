@@ -9,10 +9,17 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="section">
-    Välkommen till Coca Cola.
-    Bla bla bla....
-    Tobias
+  <div class="section" id="intro">
+    <div id="header-intro">
+      <h1 class="header-intro">Coca Cola</h1>
+    </div>
+    <div id="intro-text">
+      <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem optio eius magnam cumque nobis tempore consectetur porro provident laborum,
+       dolorum harum veniam deleniti nemo omnis, enim, vel impedit quae voluptatem dicta!
+       In deleniti voluptas similique id, nihil sapiente sequi nam voluptate officiis officia porro ipsam illum ullam, tempore perspiciatis.
+      </p>
+    </div>
   </div>
   <div class="section">
     Senaste nytt
@@ -62,20 +69,62 @@
     Samir
   </div>
   <div class="section">
-    Smak 3 - Coca Cola Zero
-    Andreas
+    <!-- Andreas -->
+    <div id="cc-zero">
+      <div class="cc-zero-text">
+        <img src="img/cczerologo.png" alt="Coca Cola Zero" class="cc-zero-logo">
+        <p>
+          Smakar lika bra som Coca Cola Classic,
+          men helt utan socker, så du kan dricka flera!
+        </p>
+      </div>
+      <img src="img/cczero.png" alt="Coca Cola Zero" class="cc-zero-img">
+      <img src="img/cczero.png" alt="Coca Cola Zero" class="cc-zero-img">
+      <img src="img/cczero.png" alt="Coca Cola Zero" class="cc-zero-img">
+    </div>
+    <!-- / Andreas -->
+  </div>
+  <div class="section test">
+    <div class="cherryDiv">
+      <p id="cherryText" class="header">CHERRY COKE</p>
+    <img src="cherry.png" alt="Cherry" width="150px" id="cherry">
+    <img src="cherrycoke.png" alt="Cherry Coke" width="400px" id="cherrycoke">
+    <img src="cherrycoke.png" alt="Cherry Coke" width="400px" id="item2">
+    <img src="cherrycoke.png" alt="Cherry Coke" width="400px" id="item3">
+    <img src="cherrycoke.png" alt="Cherry Coke" width="400px" id="item4">
+    <img src="cherrycoke.png" alt="Cherry Coke" width="400px" id="item5">
+    <img src="cocacola.png" alt="Coca cola"width="270px" id="cocacola">
+    
+   </div>
+    
   </div>
   <div class="section">
-    Smak 4 - Coca Cola Valfri
-    Tobias
-  </div>
-  <div class="section">
-    Kontakta oss
-    Andreas
+    <!-- Andreas -->
+    <div id="contact">
+      <div class="contact-img">
+        <img src="img/contact.png" alt="Kontakta oss">
+      </div>
+  
+      <form class="contact-form">
+        <h1>Kontakta oss</h1>
+        <label for="contact-name">Namn</label>
+        <input id="contact-name" type="text">
+        <label for="contact-email">E-post</label>
+        <input id="contact-email" type="email">
+        <label for="contact-subject">Ärende</label>
+        <input id="contact-subject" type="text">
+        <label for="contact-message">Meddelande</label>
+        <textarea id="contact-message"></textarea>
+        <button>Skicka</button>
+      </form>
+    </div>
+    <!-- / Andreas -->
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <!-- Skapa en egen scriptfil med ditt namn och koda i -->
   <script src="emma.js"></script>
+  <script src="andreas.js"></script>
+  <script src="tobias.js"></script>
 </body>
 </html>

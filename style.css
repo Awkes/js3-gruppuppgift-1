@@ -165,3 +165,135 @@ h1.ml2 {
 
 }
 */
+/* Coca Cola Zero */
+#cc-zero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr repeat(3,1fr);
+  align-items: center;
+  justify-items: center;
+}
+.cc-zero-text {
+ padding: 2em;
+ font-size: 1.5em;
+ text-align: center;
+}
+.cc-zero-text img { max-width: 100%; }
+.cc-zero-img {
+  max-height: 100%;
+  max-width: 90%;
+  opacity: 0;
+}
+.cc-zero-chr {opacity:0}
+
+/* Kontakt */
+#contact { 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10em;
+  width: 100vw;
+  overflow: hidden;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  transform: translateX(50vw);
+}
+.contact-form input,.contact-form textarea {
+  margin-bottom: 0.75em;
+  border: 1px solid #ccc;
+}
+.contact-form input { height: 2em; }
+.contact-form textarea { height: 6em; resize: none; }
+.contact-form button { 
+  background-color: #f00; 
+  color: #fff; 
+  border: 0; 
+  padding: 0.75em;
+}
+.contact-img img { max-width: 100%; max-height: 90vh; }
+.contact-img {
+  width: 50%;
+  transition: ease-in-out 750ms;
+  transform: translate(-15vw,10vh);
+}
+.contact-img-active {
+  transform: translateX(0);
+}
+
+/* Fix för att det ska se bättre ut på mindre enheter */
+@media(max-width: 768px) {
+  #cc-zero {
+    height: 95vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .cc-zero-text { grid-column: 1/4; }
+  #contact { padding: 2em; }
+  .contact-img { display: none; }
+  .contact-form { width: 100%; }
+}
+
+#intro{
+font-size:2em;
+background-image: url('colabackground.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+flex-direction: column;
+}
+#intro-text{
+width:30%;
+}
+
+.cherryDiv{
+position: relative;
+}
+
+
+#cherrycoke{
+  opacity: 0;
+  position: absolute;
+  left:-24%;
+  z-index:3;
+}
+#cherry{
+  position: absolute;
+  z-index: 5;
+  left:21%;
+  top:25%;
+}
+#item2,#item3{
+  position: absolute;
+  left:-25%;
+  opacity: 0;
+  z-index:2;
+  top:-2%;
+}
+
+#item4,#item5{
+  position: absolute;
+  left:-25%;
+  opacity: 0;
+  z-index:1;
+  top:-4%;
+  overflow: hidden;
+}
+#cocacola{
+  position: relative;
+  z-index:2;
+}
+
+#cherryText {
+  opacity:0;
+  font-size: 3em;
+  position: absolute;
+  top:-70%;
+  left:7%;
+}
+
+.test {
+  background-image: linear-gradient(red, purple);
+  font-size:4;
+}
