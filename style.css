@@ -20,7 +20,6 @@ body {
 /* Coca Cola Zero */
 #cc-zero {
   width: 100%;
-  /* max-height: 95vh; */
   display: grid;
   grid-template-columns: 2fr repeat(3,1fr);
   align-items: center;
@@ -44,15 +43,14 @@ body {
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  padding: 0 10em 0 2em;
-  /* height: 95vh; */
+  padding: 0 10em;
   width: 100vw;
   overflow: hidden;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   transform: translateX(50vw);
 }
 .contact-form input,.contact-form textarea {
@@ -69,7 +67,7 @@ body {
 }
 .contact-img img { max-width: 100%; max-height: 90vh; }
 .contact-img {
-  width: 70%;
+  width: 50%;
   transition: ease-in-out 750ms;
   transform: translate(-15vw,10vh);
 }
@@ -85,7 +83,6 @@ body {
     grid-template-columns: repeat(3,1fr);
   }
   .cc-zero-text { grid-column: 1/4; }
-
   #contact { padding: 2em; }
   .contact-img { display: none; }
   .contact-form { width: 100%; }

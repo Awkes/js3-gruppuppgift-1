@@ -1,4 +1,4 @@
-(()=> {
+(() => {
   // Coca Cola Zero
   const ccZero = document.querySelector('#cc-zero');
   const ccZeroText = document.querySelector('.cc-zero-text > p')
