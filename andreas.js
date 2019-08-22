@@ -1,7 +1,7 @@
 (() => {
   // Coca Cola Zero
   const ccZero = document.querySelector('#cc-zero');
-  const ccZeroText = document.querySelector('.cc-zero-text > p')
+  const ccZeroText = document.querySelector('.cc-zero-text > p');
   let ccZeroAnimated = false; // Flagga för att animationen bara ska köras en gång
 
   function animateCocaColaZero() {
@@ -15,7 +15,7 @@
         targets: '.cc-zero-chr',
         opacity: [0,1],
         duration: 500,
-        delay: (el,i) => i*30,
+        delay: (el,i) => i*30
       }).add({
         targets: '.cc-zero-logo',
         rotate: [-1,-2,-3,-4,-5,-6,-7,-8,-9,-10],
