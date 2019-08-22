@@ -48,7 +48,7 @@ anime.timeline({loop: true})
           targets: '.cocacola-logga',
           scale: 2,
           opacity: 1,
-          translateX: ['300px'],
+          translateX: ['130%'],
           duration: 4000,
         });
         
@@ -91,18 +91,21 @@ anime.timeline({loop: true})
 
 /* Glitterburk */
 
-/*
 let burk = document.querySelector('.coca-cola-burk');
 burk.addEventListener('mouseover', Visibility, false);
+burk.addEventListener('mouseout', mousegone, false);
 
 function Visibility() {
 
   let glitter = document.querySelector(".coca-cola-glitter-hide");
   glitter.classList.add("coca-cola-glitter");
-
+  
   
 }
-*/
 
+function mousegone(){
+  let glitter = document.querySelector(".coca-cola-glitter-hide");
+  glitter.classList.remove("coca-cola-glitter");
+}
 
 })();
