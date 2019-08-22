@@ -1,13 +1,23 @@
-function checkForVisibility() {
+function animateSplash() {
     var splashes = document.querySelectorAll(".splash");
+    var colaOrange = document.querySelector(".colaOrange");
     var title = document.querySelector(".newsTitle");
-    splashes.forEach(function(splash) {
       if (isElementInViewport(title)) {
-        splash.classList.add("splashVisible");
-      } else{
-        splash.classList.remove("splashVisible");
+        splashes.forEach(function(splash){
+          splash.classList.add("splashVisible");
+        });
+        colaOrange.classList.add("colaOrangeVisible");
+        title.classList.add("newsTitleVisible");
       }
-    });
+  }
+
+function animateLight() {
+    var colaLightTxt = document.querySelector(".colaLightTxt");
+    var colaLightImg = document.querySelector(".colaLightImg");
+      if (isElementInViewport(colaLightTxt)) {
+        colaLightTxt.classList.add("colaLightTxtVisible");
+        colaLightImg.classList.add("colaLightImgVisible");
+      }
   }
   
   function isElementInViewport (el) {
@@ -20,9 +30,7 @@ function checkForVisibility() {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
     );
   }
-  
-  if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', checkForVisibility, false); 
-    addEventListener('load', checkForVisibility, false);
-    addEventListener('scroll', checkForVisibility, false);
-  }
+
+  addEventListener('DOMContentLoaded', () => { animateLight(); animateSplash(); }); 
+  addEventListener('load', () => { animateLight(); animateSplash(); });
+  addEventListener('scroll', () => { animateLight(); animateSplash(); });
