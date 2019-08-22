@@ -17,13 +17,35 @@ body {
 
 /* Koda nedanför */
 
+/* Coca Cola Zero */
+#cc-zero {
+  width: 100%;
+  /* max-height: 95vh; */
+  display: grid;
+  grid-template-columns: 2fr repeat(3,1fr);
+  align-items: center;
+  justify-items: center;
+}
+.cc-zero-text {
+ padding: 2em;
+ font-size: 1.5em;
+ text-align: center;
+}
+.cc-zero-text img { max-width: 100%; }
+.cc-zero-img {
+  max-height: 100%;
+  max-width: 90%;
+  opacity: 0;
+}
+.cc-zero-chr {opacity:0}
+
 /* Kontakt */
 #contact { 
   display: flex; 
   justify-content: space-between;
   align-items: center;
   padding: 0 10em 0 2em;
-  height: 95vh;
+  /* height: 95vh; */
   width: 100vw;
   overflow: hidden;
 }
@@ -53,4 +75,18 @@ body {
 }
 .contact-img-active {
   transform: translateX(0);
+}
+
+/* Fix för att det ska se bättre ut på mindre enheter */
+@media(max-width: 768px) {
+  #cc-zero {
+    height: 95vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .cc-zero-text { grid-column: 1/4; }
+
+  #contact { padding: 2em; }
+  .contact-img { display: none; }
+  .contact-form { width: 100%; }
 }
