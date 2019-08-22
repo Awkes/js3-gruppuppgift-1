@@ -86,6 +86,7 @@ body {
   #contact { padding: 2em; }
   .contact-img { display: none; }
   .contact-form { width: 100%; }
+}
 
 #intro{
 font-size:2em;
