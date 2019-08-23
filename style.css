@@ -24,6 +24,21 @@ body {
 
 /* Nyhet */
 
+@media screen and (max-width: 1000px){
+  .splashLeft{
+    display: none !important;
+  }
+  .splashRight{
+    display: none !important;
+  }
+  .colaOrange{
+    width: 65%;
+  }
+  .newsTitle{
+    font-size: 34px !important;
+  }
+}
+
 .news{
   width: 100%;
   margin-top: auto;
@@ -48,6 +63,7 @@ body {
 .newsImg{
   display: flex;
   justify-content: center;
+  width: auto;
 }
 
 .colaOrange{
@@ -82,6 +98,20 @@ body {
 
 /* Cola Light */
 
+@media screen and (max-width: 1000px){
+  .colaLightTxt{
+    display: none !important;
+  }
+
+  .colaLightImg>img{
+    width: 65% !important;
+  }
+
+  .colaLightImg{
+    justify-content: center;
+  }
+}
+
 .colaLightSection{
   width: 100%;
   display: flex;
@@ -108,6 +138,10 @@ body {
   display: flex;
 	transform: translatey(0px);
   animation: float 3s ease-in-out infinite;
+}
+
+.colaLightImg>img{
+  width: 85%;
 }
 
 .colaLightImgVisible{
