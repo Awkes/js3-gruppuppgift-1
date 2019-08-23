@@ -21,6 +21,114 @@ body {
 
 /* Koda nedanför */
 
+
+/* Nyhet */
+
+.news{
+  width: 100%;
+  margin-top: auto;
+}
+
+.newsTitle{
+  text-align: center;
+  font-size: 5rem;
+  transform: scale(0.7);
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  opacity: 0;
+  margin: 0 0 50px;
+}
+
+.newsTitleVisible{
+  transform: scale(1);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.newsImg{
+  display: flex;
+  justify-content: center;
+}
+
+.colaOrange{
+  transform:scale(0.8);
+  transition: all 1.2s ease 0.5s;
+  opacity: 0;
+}
+
+.colaOrangeVisible{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.splashLeft {
+  transform: translateX(50px);
+  transition: all 1.2s ease-out 0.6s;
+  display: flex;
+  opacity: 0;
+}
+
+.splashRight {
+  transform: translateX(-50px);
+  transition: all 1.2s ease-out 0.6s;
+  display: flex;
+  opacity: 0;
+}
+
+.splashVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Cola Light */
+
+.colaLightSection{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.colaLightTxt{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  opacity: 0;
+}
+
+.colaLightTxtVisible{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.colaLightImg{
+  opacity: 0;
+  transition: all 0.8s ease;
+  display: flex;
+	transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
+.colaLightImgVisible{
+  opacity: 1;
+}
+
+@keyframes float {
+	0% {
+    transform: translatey(0px);
+    filter: drop-shadow(0px 0px 20px #222); 
+	}
+	50% {
+    transform: translatey(-40px);
+    filter: drop-shadow(0px 0px 20px #222); 
+	}
+	100% {
+    transform: translatey(0px);
+    filter: drop-shadow(0px 0px 20px #222); 
+	}
+}
+=======
 /* Kampanj border */
 .border-kampanj {
   border: 1px white solid;
@@ -314,3 +422,4 @@ position: relative;
   background-image: linear-gradient(red, purple);
   font-size:4;
 }
+
