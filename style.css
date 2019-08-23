@@ -402,6 +402,7 @@ background-image: url('colabackground.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 flex-direction: column;
+text-shadow: 2px 2px 4px #000000;
 }
 #intro-text{
 width:30%;
@@ -456,5 +457,6 @@ position: relative;
 .test {
   background-image: linear-gradient(red, purple);
   font-size:4;
+  overflow: hidden;
 }
 
