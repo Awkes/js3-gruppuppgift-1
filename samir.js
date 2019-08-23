@@ -12,9 +12,10 @@ function animateSplash() {
   }
 
 function animateLight() {
+    var colaLightTrigger = document.querySelector(".colaLightTrigger");
     var colaLightTxt = document.querySelector(".colaLightTxt");
     var colaLightImg = document.querySelector(".colaLightImg");
-      if (isElementInViewport(colaLightTxt)) {
+      if (isElementInViewport(colaLightTrigger)) {
         colaLightTxt.classList.add("colaLightTxtVisible");
         colaLightImg.classList.add("colaLightImgVisible");
       }
